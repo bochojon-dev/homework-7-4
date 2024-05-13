@@ -55,3 +55,27 @@ select {
   background: #fbfbfb;
   padding: 12px;
 }
+.buttons button {
+  color: #3d3d3d !important;
+  padding: 8px !important;
+  border-radius: 4px !important;
+  background: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  position: absolute;
+  bottom: -100vh;
+  transition: all 0.6s linear;
+}
+.buttons button:hover {
+  color: #46a358 !important;
+}
+.card:hover .buttons {
+  top: 150px;
+}
