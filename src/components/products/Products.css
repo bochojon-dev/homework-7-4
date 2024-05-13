@@ -45,6 +45,12 @@ select {
   gap: 70px;
   background: #fbfbfb;
   margin-bottom: 70px;
+  position: relative;
+  transition: all 0.2s ease-out;
+}
+.card:hover {
+  transform: scale(1.004);
+  box-shadow: 0 6px 3px 0 #ccc;
 }
 .card img {
   width: 100%;
@@ -70,12 +76,16 @@ select {
   gap: 12px;
   justify-content: center;
   position: absolute;
-  bottom: -100vh;
-  transition: all 0.6s linear;
+  bottom: 80px;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s linear;
 }
 .buttons button:hover {
   color: #46a358 !important;
 }
 .card:hover .buttons {
-  top: 150px;
+  bottom: 130px;
+  opacity: 1;
 }

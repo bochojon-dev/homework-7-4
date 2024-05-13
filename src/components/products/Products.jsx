@@ -10,10 +10,10 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const Products = ({ data }) => {
   let wishlist = useSelector((state) => state.wishlist.value);
-  // console.log(wishlist);
+  let cart = useSelector((state) => state.cart.value);
+  console.log(cart);
   const dispatch = useDispatch();
 
-  // console.log(data);
   const product = data?.map((el) => (
     <div key={el.id} className="card">
       <img src={el.images[0]} alt="product" />
@@ -22,13 +22,13 @@ const Products = ({ data }) => {
         <p>${el.price}.00</p>
       </div>
       <div className="buttons">
-        {/* <button onClick={() => dispatch(toggleLike(el))}>
+        <button onClick={() => dispatch(toggleLike(el))}>
           {cart?.some((item) => item.id === el.id) ? (
             <IoCartOutline />
           ) : (
             <FaShoppingCart />
           )}
-        </button> */}
+        </button>
         <button onClick={() => dispatch(toggleLike(el))}>
           {wishlist?.some((item) => item.id === el.id) ? (
             <FaHeart />
