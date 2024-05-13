@@ -5,12 +5,12 @@
   background-repeat: no-repeat;
 }
 .banner {
-  padding: 50px 0 60px;
+  margin: 100px 0 46px;
 }
 .banner__content {
   position: absolute;
-  top: 70px;
-  left: 45px;
+  top: 80px;
+  left: 60px;
   display: flex;
   flex-direction: column;
   gap: 10px;

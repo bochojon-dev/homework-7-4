@@ -1,0 +1,35 @@
+.product_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 76px;
+}
+.product_items ul {
+  display: flex;
+  gap: 36px;
+}
+.product_items li {
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.product_items li:hover {
+  border-bottom: 2px solid #46a358;
+  color: #46a358;
+  font-weight: 700;
+}
+.product_sort {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.product_sort select {
+  border: 0;
+}
+.product_title p,
+li,
+select {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #3d3d3d;
+}
